@@ -1,8 +1,17 @@
-.message-body {
-  border: 1px solid black;
-  height: 40em;
-  padding: 15px;
-}
 .fb {
   color: #105be7cc;
+}
+.message-body {
+  border: 1px solid #105be7cc;
+  width: 30rem;
+  padding: 15px;
+}
+.card-message img {
+  height: 310px;
+  width: 350px;
+}
+.card-group {
+  border-radius: 16px;
+  padding: 0;
+  margin-left: 20rem;
 }

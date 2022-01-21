@@ -59,9 +59,7 @@ const MessageBody = () =>{
             return <Loader />
         }
         return (
-            <div className=''  style={{ width: '30em',
-            overflowX: 'auto',
-            whiteSpace: "nowrap"}}>
+            <div className=''  style={{ width: '45em',overflowX: 'auto',whiteSpace: "nowrap"}}>
                 
                 <div className='d-flex justify-content-around' >
                     {gifsData}
@@ -110,13 +108,25 @@ const MessageBody = () =>{
     
     
     return (
-        <div className='container mt-5 message-body'>
-            <div className='d-flex justify-content-around'>
-                <h1 className=''><i className="fab fa-facebook fb"/> Post Message App</h1>
+        <div className='container mt-5 message-body' >
+            <div className='d-flex justify-content-around my-4'>
+                <h3 className='mx-3'><i className="fab fa-facebook fb"/> Post Message App</h3>
                 <button type="button" className="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#messageModal">
                     Add Post
                 </button>
             </div>
+            <div className="card " style={{width: "25rem",margin:"auto"}}>
+                <h5 className="card-title">My First Post</h5>
+                <div className="card-body">
+                    <img src="https://developers.giphy.com/branch/master/static/use_case_messaging-bbab18ff6f9851eafcda5b49b087ebb3.gif" className="card-img-top" alt="..." />
+                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    
+                </div>
+                <div className="card-footer">
+                    <small className="text-muted">Last updated 3 mins ago</small>
+                </div>
+            </div>
+            
 
             <div className="modal fade" id="messageModal" tabIndex="-1" aria-hidden="true">
                 <div className="modal-dialog modal-lg modal-dialog-scrollable">
