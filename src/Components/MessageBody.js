@@ -44,7 +44,7 @@ const MessageBody = () =>{
     const renderSelectedGif = ()=>{
         return (
             <div>
-                {!selectedGif ? <img src={selectedGif.images.fixed_height.url} /> : ''}
+                {!selectedGif ? <img src={selectedGif.images.fixed_height.url} alt={selectedGif.title} /> : ''}
             </div>
         );
     }
@@ -118,7 +118,7 @@ const MessageBody = () =>{
             <div className="card " style={{width: "25rem",margin:"auto"}}>
                 <h5 className="card-title">My First Post</h5>
                 <div className="card-body">
-                    <img src="https://developers.giphy.com/branch/master/static/use_case_messaging-bbab18ff6f9851eafcda5b49b087ebb3.gif" className="card-img-top" alt="..." />
+                    <img alt="gifs" src="https://developers.giphy.com/branch/master/static/use_case_messaging-bbab18ff6f9851eafcda5b49b087ebb3.gif" className="card-img-top" />
                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     
                 </div>
